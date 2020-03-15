@@ -16,14 +16,14 @@ Only Q knows about the inventory, only Moneypenny-instances know about the agent
 Different intelligence sources will deliver info and ask for a agent (or a couple of them) and a gadget that is needed for some mission. One of the M-subscribers will process this event, it must know whether the 00 agent is available in the squad (M cannot perform that check on its own. She will send an event that will be handled by one of the Moneypenny-subscribers), and whether a fit gadget in his Inventory (as before, M cannot perform that check on its own. She will send an event that will be handled by Q). After those checks are made, M fills a report to her diary in case all conditions are met. She also increments a counter of total received missions (this counter is incremented whether the mission was executed or not).
 ##  PROGRAM EXECUTION
 When started, it should accept as command line argument the name of the json input file and the names of the two output files - the first file is the output file for the gadgets, and the second is for the List<Report> - the order of the parameters should be:<br/>
-  1.“inputFile.json”- data file with all the data required(missions to execute, agent details, gadget details, number of M instances, number of Intelligence Instances etc...)<br/>
+  1.“inputFile.json”- data file with all the data required(missions to execute, agent details, gadget details, number of M          instances, number of Intelligence Instances, etc...)<br/>
   2.“inventoryOutputFile.json”- output file. Shows to gadgets that left in the inventory after executing all the missions.<br/>
   3.“diaryOutputFile.json”- output file. Shows all the missions that executed.
   
 ## Compilation
-Make sure you have maven installed.
-1.clone the project.
-2.open the terminal in the local directory.
-3. type "mvn compile"
+Make sure you have maven installed.<br/>
+1.clone the project.<br/>
+2.open the terminal in the local directory.<br/>
+3. type "mvn compile"<br/>
 4. type mvn exec:java -Dexec.mainClass="bgu.spl.mics.application.MI6Runner" -Dexec.args="inputFile.json inventoryOutputFile.json diaryOutputFile.json"
   
