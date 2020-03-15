@@ -15,9 +15,9 @@ Only Q knows about the inventory, only Moneypenny-instances know about the agent
 ## program flow
 Different intelligence sources will deliver info and ask for a agent (or a couple of them) and a gadget that is needed for some mission. One of the M-subscribers will process this event, it must know whether the 00 agent is available in the squad (M cannot perform that check on its own. She will send an event that will be handled by one of the Moneypenny-subscribers), and whether a fit gadget in his Inventory (as before, M cannot perform that check on its own. She will send an event that will be handled by Q). After those checks are made, M fills a report to her diary in case all conditions are met. She also increments a counter of total received missions (this counter is incremented whether the mission was executed or not).
 ##  PROGRAM EXECUTION
-When started, it should accept as commandline argument the name of the json input file and the names of the two output files - the first file is the output file for the gadgets, and the second is for the List<Report> - the order of the parameters should be:
-  1.“inputFile.json”- data file with all the data required(missions to execute, agent details, gadget details, number of M instances, number of Intelligence Instances etc...)
-  2.“inventoryOutputFile.json”- output file. Shows to gadgets that left in the inventory after executing all the missions.
+When started, it should accept as command line argument the name of the json input file and the names of the two output files - the first file is the output file for the gadgets, and the second is for the List<Report> - the order of the parameters should be:<br/>
+  1.“inputFile.json”- data file with all the data required(missions to execute, agent details, gadget details, number of M instances, number of Intelligence Instances etc...)<br/>
+  2.“inventoryOutputFile.json”- output file. Shows to gadgets that left in the inventory after executing all the missions.<br/>
   3.“diaryOutputFile.json”- output file. Shows all the missions that executed.
   
 ## Compilation
