@@ -1,5 +1,5 @@
 # MI6
-implementation of a a simple Pub-Sub framework, which will use to implement a system for the MI6, On Her Majesty’s Secret Service. Pub-Sub is shorthand for Publish-Subscribe messaging, an asynchronous communication method in which messages are exchanged between applications without knowing the identity ofthe sender or recipient.
+implementation of a a simple Pub-Sub framework, which will use to implement a system for the MI6, On Her Majesty’s Secret Service. Pub-Sub is shorthand for Publish-Subscribe messaging, an asynchronous communication method in which messages are exchanged between applications without knowing the identity of the sender or recipient.
 ## Framework details
 - MessageBroker: A shared object used for communication between Publishers and Subscribers.</br>
 - Topic – An intermediary channel that maintains a list of subscribers to relay messages that are received from publishers.</br>
